@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+import nba from '../nba-client';
+import Profile from './Profile';
+import ShotChart from './ShotChart';
+
 class Main extends Component {
     state = {
         playerInfo: {}
@@ -20,6 +24,7 @@ class Main extends Component {
         return (
             <div className="main">
                 <Profile playerInfo={this.state.playerInfo}/>
+                <ShotChart />
             </div>
         );
     }
